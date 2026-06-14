@@ -1,0 +1,58 @@
+.who-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.who-quote {
+  font-style: italic;
+  font-size: 18px;
+  color: var(--cyan);
+  border-left: 3px solid var(--cyan);
+  padding-left: 20px;
+  margin-top: 28px;
+  line-height: 1.5;
+}
+
+.who-right { gap: 16px; }
+
+.pillar-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-top: 3px solid;
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: transform 0.2s;
+}
+
+.pillar-card:hover { transform: translateY(-3px); }
+
+.pillar-cyan   { border-top-color: var(--cyan); }
+.pillar-yellow { border-top-color: var(--yellow); }
+.pillar-blue   { border-top-color: var(--primary-blue); }
+.pillar-green  { border-top-color: var(--green); }
+
+.pillar-icon { font-size: 28px; margin-bottom: 12px; }
+
+.pillar-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pillar-cyan .pillar-title   { color: var(--cyan); }
+.pillar-yellow .pillar-title { color: var(--yellow); }
+.pillar-blue .pillar-title   { color: var(--primary-blue); }
+.pillar-green .pillar-title  { color: var(--green); }
+
+.pillar-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .who-layout { grid-template-columns: 1fr; gap: 40px; }
+}

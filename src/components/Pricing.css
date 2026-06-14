@@ -1,0 +1,70 @@
+.pricing-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table thead tr {
+  background: var(--primary-dark);
+}
+
+.pricing-table th {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  padding: 16px 20px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.pricing-table tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.2s;
+}
+
+.pricing-table tbody tr:last-child { border-bottom: none; }
+.pricing-table tbody tr:nth-child(odd)  { background: var(--bg-card); }
+.pricing-table tbody tr:nth-child(even) { background: rgba(22,34,54,0.5); }
+.pricing-table tbody tr:hover { background: rgba(47,111,179,0.12); }
+
+.pricing-table td {
+  padding: 18px 20px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.td-fat { color: var(--text-muted); }
+.td-pot { color: var(--cyan); font-family: 'Montserrat', sans-serif; font-weight: 700; }
+.td-fee {}
+
+.fee-badge {
+  display: inline-block;
+  background: rgba(39,174,96,0.12);
+  border: 1px solid rgba(39,174,96,0.3);
+  color: var(--green);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.pricing-note {
+  margin-top: 24px;
+  background: rgba(0,174,239,0.08);
+  border: 1px solid rgba(0,174,239,0.2);
+  border-radius: 8px;
+  padding: 18px 24px;
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.6;
+}

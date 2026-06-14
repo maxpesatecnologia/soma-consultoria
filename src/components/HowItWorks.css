@@ -1,0 +1,112 @@
+.steps {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.step {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--cyan);
+  background: rgba(0,174,239,0.12);
+  border: 2px solid rgba(0,174,239,0.35);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.step-line {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  right: -50%;
+  height: 2px;
+  background: rgba(0,174,239,0.2);
+  z-index: 0;
+}
+
+.step:last-child .step-line { display: none; }
+
+.step-body {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.step-icon { font-size: 28px; margin-bottom: 8px; }
+
+.step-time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--yellow);
+  background: rgba(242,183,5,0.1);
+  padding: 3px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.risk-zero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 48px;
+  background: rgba(39,174,96,0.1);
+  border: 1px solid rgba(39,174,96,0.3);
+  border-radius: 8px;
+  padding: 18px 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: var(--white);
+}
+
+.risk-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .steps { flex-direction: column; align-items: flex-start; gap: 32px; }
+  .step { flex-direction: row; gap: 20px; align-items: flex-start; min-width: auto; }
+  .step-line { display: none; }
+  .step-body { text-align: left; padding: 0; margin-top: 4px; }
+}
