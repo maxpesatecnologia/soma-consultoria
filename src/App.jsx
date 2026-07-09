@@ -13,6 +13,7 @@ import Guarantees from './components/Guarantees'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import WhatsAppFloat from './components/WhatsAppFloat'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   )
 }
